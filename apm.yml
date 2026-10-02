@@ -8,5 +8,6 @@ targets:
   - claude
 dependencies:
   apm:
+    - danielmeppiel/genesis
   mcp: []
 includes: auto
