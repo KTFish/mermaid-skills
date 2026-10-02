@@ -1,0 +1,22 @@
+name: APM lint
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  apm-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: microsoft/apm-action@v1
+        with:
+          setup-only: "true"
+          apm-version: "0.27.0"
+      - run: |
+          if find . -name SKILL.md -not -path "./apm_modules/*" -print -quit | grep -q .; then
+            apm compile --validate
+          fi
+          apm audit --ci

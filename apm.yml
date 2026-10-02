@@ -1,0 +1,13 @@
+name: skill-template
+version: 1.0.0
+description: Template for a single skill repository.
+targets:
+  - copilot
+  - gemini
+  - antigravity
+  - claude
+dependencies:
+  apm:
+    - danielmeppiel/genesis#18e73c35e5cefaf431fbe4e080e8f125ebfece33
+  mcp: []
+includes: auto

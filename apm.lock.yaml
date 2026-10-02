@@ -1,0 +1,14 @@
+lockfile_version: '1'
+generated_at: '2026-08-25T11:01:25.060224+00:00'
+apm_version: 0.27.0
+dependencies:
+- repo_url: danielmeppiel/genesis
+  name: genesis
+  host: github.com
+  resolved_commit: 18e73c35e5cefaf431fbe4e080e8f125ebfece33
+  resolved_ref: 18e73c35e5cefaf431fbe4e080e8f125ebfece33
+  version: 0.4.0
+  package_type: skill_bundle
+  content_hash: sha256:3f941a3e288053f7c0d8111d5febcd2f94de6f9dada7e8479fa676736975a272
+  declared_license: Apache-2.0
+deployments: []
