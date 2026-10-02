@@ -1,14 +1,48 @@
 lockfile_version: '1'
-generated_at: '2026-08-25T11:01:25.060224+00:00'
-apm_version: 0.27.0
-dependencies:
-- repo_url: danielmeppiel/genesis
-  name: genesis
-  host: github.com
-  resolved_commit: 18e73c35e5cefaf431fbe4e080e8f125ebfece33
-  resolved_ref: 18e73c35e5cefaf431fbe4e080e8f125ebfece33
-  version: 0.4.0
-  package_type: skill_bundle
-  content_hash: sha256:3f941a3e288053f7c0d8111d5febcd2f94de6f9dada7e8479fa676736975a272
-  declared_license: Apache-2.0
-deployments: []
+dependencies: []
+deployments:
+- kind: project-relative
+  target: claude
+  value: .claude/skills/draw-mermaid
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/draw-mermaid/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- kind: project-relative
+  target: claude
+  value: .claude/skills/draw-mermaid/references/color_preferences.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:9ca3814129e47eec7149ca648c99c8ae5a8ed3b2e72024cd7a164b5ad38253b3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/draw-mermaid/references/shapre_preferences.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
+local_deployed_files:
+- .claude/skills/draw-mermaid
+- .claude/skills/draw-mermaid/SKILL.md
+- .claude/skills/draw-mermaid/references/color_preferences.md
+- .claude/skills/draw-mermaid/references/shapre_preferences.md
+local_deployed_file_hashes:
+  .claude/skills/draw-mermaid/SKILL.md: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  .claude/skills/draw-mermaid/references/color_preferences.md: sha256:9ca3814129e47eec7149ca648c99c8ae5a8ed3b2e72024cd7a164b5ad38253b3
+  .claude/skills/draw-mermaid/references/shapre_preferences.md: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4

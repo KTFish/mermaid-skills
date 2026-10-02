@@ -2,3 +2,6 @@ skill/
 evals/
 dev/
 apm_modules/
+
+.agents/
+.claude/
