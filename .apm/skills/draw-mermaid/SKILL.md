@@ -59,6 +59,8 @@ The verbatim `classDef` template for copy-paste is in
 > Read `references/shape-preferences.md` when the diagram contains human
 > actors or C4 Person elements.
 
+Read `references/diagram-types.md` for frequently occuring diagrams and preferences for how they should be drawn.
+
 ## Out of scope
 
 Exporting or rendering diagrams to SVG, PNG, or PDF is **not** part of this
