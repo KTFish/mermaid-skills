@@ -1,5 +1,5 @@
 name: mermaid-skills
-version: 0.2.0
+version: 0.2.2
 description: Skill collection for working with Mermaid diagrams.
 targets:
   - copilot
@@ -7,7 +7,9 @@ targets:
   - antigravity
   - claude
 dependencies:
-  apm:
-    - danielmeppiel/genesis
+  apm: []
   mcp: []
 includes: auto
+devDependencies:
+  apm:
+    - KTFish/genesis

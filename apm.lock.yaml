@@ -1,7 +1,7 @@
 lockfile_version: '1'
-apm_version: 0.31.0
 dependencies:
-- repo_url: danielmeppiel/genesis
+- repo_url: ktfish/genesis
+  materialization_repo_url: KTFish/genesis
   name: genesis
   host: github.com
   resolved_commit: 18e73c35e5cefaf431fbe4e080e8f125ebfece33
@@ -136,16 +136,125 @@ dependencies:
     .claude/skills/genesis/references/audience-boundary.md: sha256:85b1dbc98a0fc3115c6c6a92046a290167e1fcd90fe0ae035ec21026e2ec9387
     .claude/skills/genesis/references/cost-economics-process.md: sha256:e14f743132897132119b0711b252733e4804d55942fca97a2d12d1fc744285f5
   content_hash: sha256:3f941a3e288053f7c0d8111d5febcd2f94de6f9dada7e8479fa676736975a272
+  is_dev: true
   declared_license: Apache-2.0
 deployments:
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2477f542d55b3ea03b47d1cfb4d9d0acc219156511e30cb44e8bf8e685bc98c1
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid/assets/grayscale-classes.mmd
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:03893b20fd36d1bba3165dbf34dbf8bbfd223b1ca055570ab8b91c81a589452f
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid/references/color-palette.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:94d7128f247554a93f6781ec79ad00fb9fa8a69b2d8ff11632863bb1c3fdae80
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid/references/diagram-types.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6146db377155cd00bc919ee7e81c02ffa88832b48d0069969b7da8ee78f0554a
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid/references/shape-preferences.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/draw-mermaid/references/syntax-rules.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a4e9cb6b3fffdd39680f77810e89408a8d4e03a97fbd11766b5152d536c8dbca
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/export-mermaid
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/export-mermaid/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0a96ffd92041458277bc75f3526aa48206959d9a2e90d7737783cec2da363b52
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/export-mermaid/references/mmdc-usage.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:763922c12f752b892908aa9941ff9d753dea38185c322ad37a8d6187211d9132
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/export-mermaid/references/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f87a4d947a890f6c40455461ebd752bb21417b59406b6504f2c837464add8ccf
+- kind: project-relative
+  target: antigravity
+  value: .agents/skills/export-mermaid/scripts/export_diagrams.sh
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b7e14cf18f87138767295cb6bb149c4fb773beb876519da481d64444e6a12427
 - kind: project-relative
   target: antigravity
   value: .agents/skills/genesis
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: null
 - kind: project-relative
   target: antigravity
@@ -153,8 +262,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:aac6c9da9ec96b0bb5c1c76da30041fc6a1e8d9449299b8b57d6e495fa8d06d9
 - kind: project-relative
   target: antigravity
@@ -162,8 +271,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:8aef1ec944011982ca863052263bf1fa6d8e798d13d657387b5bd5b1d2f38c43
 - kind: project-relative
   target: antigravity
@@ -171,8 +280,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:36e01da56846c14fd53cda1a0f57b54cef707bdc48d346fbee7f0589c3c20fc7
 - kind: project-relative
   target: antigravity
@@ -180,8 +289,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:6386595d52c2c92a0670c98528a1c4b68f420b67310c01afc543248dc46903b1
 - kind: project-relative
   target: antigravity
@@ -189,8 +298,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:bf25156120f6a722a84c631df5403183d859378dfafeb23c52afbe28be755625
 - kind: project-relative
   target: antigravity
@@ -198,8 +307,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:b74607df38466dc54dd58235486b8cc0846ec9be4658cb5a32d56ac431a746e7
 - kind: project-relative
   target: antigravity
@@ -207,8 +316,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:e87d19f79eb696213dce08c92a60da5c552bf0ebe6485c306d7352acce474523
 - kind: project-relative
   target: antigravity
@@ -216,8 +325,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:da5557656ab329845d12604eac333c885a36661f0c12c7d94542b33c8f373999
 - kind: project-relative
   target: antigravity
@@ -225,8 +334,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:74276224b4b01f1f4d44fca97fc60898f96d17ba4b9ed80a41ef11cc2009eefa
 - kind: project-relative
   target: antigravity
@@ -234,8 +343,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:2b1e41147f465b28a16b1cff32f0abf464402db035c2d581e65ebc1ab705ba87
 - kind: project-relative
   target: antigravity
@@ -243,8 +352,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:876038934797d8330f9524d54a637459249f7669d215326d6ca35dca0431eeeb
 - kind: project-relative
   target: antigravity
@@ -252,8 +361,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:e7108e692e3f356a5423f564a5e509ebc6f8a08d569a6c44bf8e5746965ef1a1
 - kind: project-relative
   target: antigravity
@@ -261,8 +370,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:c88ceb8394dedb609bddf23a04b72fde9c33714dfa124ea4f00b7552b3ce34a5
 - kind: project-relative
   target: antigravity
@@ -270,8 +379,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:8a016663e696c229ea29135e37b81f9f7f9c2ba9f493cc1cc54a79bac0582978
 - kind: project-relative
   target: antigravity
@@ -279,8 +388,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:92bf82715e63b2b69e9bc16a42c5e896ce70203a8a83d9fc1969ec3c72d235d9
 - kind: project-relative
   target: antigravity
@@ -288,8 +397,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:9d264b0bc3dfbb5f73668ac504c354dc5db4a1aedde3f23b302485c0f2a060af
 - kind: project-relative
   target: antigravity
@@ -297,8 +406,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:ebeebfc846b642cc58eecce3a5e2dfa8c5de4f2509de5acc4e7d08740c329b7e
 - kind: project-relative
   target: antigravity
@@ -306,8 +415,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:1b920f1a21ed5e0e94eedc354471180e99a17cf5d56df97bebfc1387f2a29315
 - kind: project-relative
   target: antigravity
@@ -315,8 +424,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:774132a577567ab35b0bd951af8d6ebebbb471fbbc4b2330f09a3db6102909af
 - kind: project-relative
   target: antigravity
@@ -324,8 +433,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:49b787e57a987ff3b11dacb2d7d5803deb5296f67e78d69f1c980270f8e6d96f
 - kind: project-relative
   target: antigravity
@@ -333,8 +442,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:86484eb8839f1d3e62f50969ee6e6282a3f477dc2c9b3c3a7ad1637809dba393
 - kind: project-relative
   target: antigravity
@@ -342,8 +451,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:675d0d629e2a3c23da0f8981eb92a0d0fdfeee541e8200c88039790e2d75b04e
 - kind: project-relative
   target: antigravity
@@ -351,8 +460,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:faf4c3905829f91ca9c7331636672c86c1dea5f89e6462546f39963f0146a14b
 - kind: project-relative
   target: antigravity
@@ -360,8 +469,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:2de53dbc41ad6fe1d75dd6b5cdef8a712b3db5c20c19de2e9de37c1bd8ce8372
 - kind: project-relative
   target: antigravity
@@ -369,8 +478,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:0c3cd11853c001698127c0ec459ab160ccbbd92693b4af3ba00f38dc66c14dd7
 - kind: project-relative
   target: antigravity
@@ -378,8 +487,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:95357a340e935eb8b0d6371f1f4b387222e102013c6da1896009b2c65cbaf155
 - kind: project-relative
   target: antigravity
@@ -387,8 +496,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:0f9c455e60ef7a2b05b82b58f65a22349aa858b2cb68fe381b3e59f157f031ec
 - kind: project-relative
   target: antigravity
@@ -396,8 +505,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:4b7f3e5a1b406a493ec54ce8dba6f26539b917acc151e7538f6dfc6ffc57f701
 - kind: project-relative
   target: antigravity
@@ -405,8 +514,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:b2acc15f7533aa601dc832662df98710162149a63e2210f7da9d148f4a386b91
 - kind: project-relative
   target: antigravity
@@ -414,8 +523,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:85b1dbc98a0fc3115c6c6a92046a290167e1fcd90fe0ae035ec21026e2ec9387
 - kind: project-relative
   target: antigravity
@@ -423,8 +532,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:e14f743132897132119b0711b252733e4804d55942fca97a2d12d1fc744285f5
 - kind: project-relative
   target: claude
@@ -443,7 +552,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:fc7660a3c9665314802b4ab00fcc81dc0eaa67e000f5b0075bc590af513d4d1a
+  content_hash: sha256:2477f542d55b3ea03b47d1cfb4d9d0acc219156511e30cb44e8bf8e685bc98c1
 - kind: project-relative
   target: claude
   value: .claude/skills/draw-mermaid/assets/grayscale-classes.mmd
@@ -462,6 +571,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:94d7128f247554a93f6781ec79ad00fb9fa8a69b2d8ff11632863bb1c3fdae80
+- kind: project-relative
+  target: claude
+  value: .claude/skills/draw-mermaid/references/diagram-types.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6146db377155cd00bc919ee7e81c02ffa88832b48d0069969b7da8ee78f0554a
 - kind: project-relative
   target: claude
   value: .claude/skills/draw-mermaid/references/shape-preferences.md
@@ -531,8 +649,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: null
 - kind: project-relative
   target: claude
@@ -540,8 +658,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:aac6c9da9ec96b0bb5c1c76da30041fc6a1e8d9449299b8b57d6e495fa8d06d9
 - kind: project-relative
   target: claude
@@ -549,8 +667,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:8aef1ec944011982ca863052263bf1fa6d8e798d13d657387b5bd5b1d2f38c43
 - kind: project-relative
   target: claude
@@ -558,8 +676,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:36e01da56846c14fd53cda1a0f57b54cef707bdc48d346fbee7f0589c3c20fc7
 - kind: project-relative
   target: claude
@@ -567,8 +685,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:6386595d52c2c92a0670c98528a1c4b68f420b67310c01afc543248dc46903b1
 - kind: project-relative
   target: claude
@@ -576,8 +694,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:bf25156120f6a722a84c631df5403183d859378dfafeb23c52afbe28be755625
 - kind: project-relative
   target: claude
@@ -585,8 +703,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:b74607df38466dc54dd58235486b8cc0846ec9be4658cb5a32d56ac431a746e7
 - kind: project-relative
   target: claude
@@ -594,8 +712,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:e87d19f79eb696213dce08c92a60da5c552bf0ebe6485c306d7352acce474523
 - kind: project-relative
   target: claude
@@ -603,8 +721,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:da5557656ab329845d12604eac333c885a36661f0c12c7d94542b33c8f373999
 - kind: project-relative
   target: claude
@@ -612,8 +730,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:74276224b4b01f1f4d44fca97fc60898f96d17ba4b9ed80a41ef11cc2009eefa
 - kind: project-relative
   target: claude
@@ -621,8 +739,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:2b1e41147f465b28a16b1cff32f0abf464402db035c2d581e65ebc1ab705ba87
 - kind: project-relative
   target: claude
@@ -630,8 +748,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:876038934797d8330f9524d54a637459249f7669d215326d6ca35dca0431eeeb
 - kind: project-relative
   target: claude
@@ -639,8 +757,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:e7108e692e3f356a5423f564a5e509ebc6f8a08d569a6c44bf8e5746965ef1a1
 - kind: project-relative
   target: claude
@@ -648,8 +766,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:c88ceb8394dedb609bddf23a04b72fde9c33714dfa124ea4f00b7552b3ce34a5
 - kind: project-relative
   target: claude
@@ -657,8 +775,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:8a016663e696c229ea29135e37b81f9f7f9c2ba9f493cc1cc54a79bac0582978
 - kind: project-relative
   target: claude
@@ -666,8 +784,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:92bf82715e63b2b69e9bc16a42c5e896ce70203a8a83d9fc1969ec3c72d235d9
 - kind: project-relative
   target: claude
@@ -675,8 +793,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:9d264b0bc3dfbb5f73668ac504c354dc5db4a1aedde3f23b302485c0f2a060af
 - kind: project-relative
   target: claude
@@ -684,8 +802,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:ebeebfc846b642cc58eecce3a5e2dfa8c5de4f2509de5acc4e7d08740c329b7e
 - kind: project-relative
   target: claude
@@ -693,8 +811,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:1b920f1a21ed5e0e94eedc354471180e99a17cf5d56df97bebfc1387f2a29315
 - kind: project-relative
   target: claude
@@ -702,8 +820,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:774132a577567ab35b0bd951af8d6ebebbb471fbbc4b2330f09a3db6102909af
 - kind: project-relative
   target: claude
@@ -711,8 +829,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:49b787e57a987ff3b11dacb2d7d5803deb5296f67e78d69f1c980270f8e6d96f
 - kind: project-relative
   target: claude
@@ -720,8 +838,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:86484eb8839f1d3e62f50969ee6e6282a3f477dc2c9b3c3a7ad1637809dba393
 - kind: project-relative
   target: claude
@@ -729,8 +847,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:675d0d629e2a3c23da0f8981eb92a0d0fdfeee541e8200c88039790e2d75b04e
 - kind: project-relative
   target: claude
@@ -738,8 +856,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:faf4c3905829f91ca9c7331636672c86c1dea5f89e6462546f39963f0146a14b
 - kind: project-relative
   target: claude
@@ -747,8 +865,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:2de53dbc41ad6fe1d75dd6b5cdef8a712b3db5c20c19de2e9de37c1bd8ce8372
 - kind: project-relative
   target: claude
@@ -756,8 +874,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:0c3cd11853c001698127c0ec459ab160ccbbd92693b4af3ba00f38dc66c14dd7
 - kind: project-relative
   target: claude
@@ -765,8 +883,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:95357a340e935eb8b0d6371f1f4b387222e102013c6da1896009b2c65cbaf155
 - kind: project-relative
   target: claude
@@ -774,8 +892,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:0f9c455e60ef7a2b05b82b58f65a22349aa858b2cb68fe381b3e59f157f031ec
 - kind: project-relative
   target: claude
@@ -783,8 +901,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:4b7f3e5a1b406a493ec54ce8dba6f26539b917acc151e7538f6dfc6ffc57f701
 - kind: project-relative
   target: claude
@@ -792,8 +910,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:b2acc15f7533aa601dc832662df98710162149a63e2210f7da9d148f4a386b91
 - kind: project-relative
   target: claude
@@ -801,8 +919,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:85b1dbc98a0fc3115c6c6a92046a290167e1fcd90fe0ae035ec21026e2ec9387
 - kind: project-relative
   target: claude
@@ -810,94 +928,27 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - danielmeppiel/genesis
-  active_owner: danielmeppiel/genesis
+  - ktfish/genesis
+  active_owner: ktfish/genesis
   content_hash: sha256:e14f743132897132119b0711b252733e4804d55942fca97a2d12d1fc744285f5
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:fc7660a3c9665314802b4ab00fcc81dc0eaa67e000f5b0075bc590af513d4d1a
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/assets/grayscale-classes.mmd
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:03893b20fd36d1bba3165dbf34dbf8bbfd223b1ca055570ab8b91c81a589452f
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/references/color-palette.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:94d7128f247554a93f6781ec79ad00fb9fa8a69b2d8ff11632863bb1c3fdae80
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/references/color_preferences.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:9ca3814129e47eec7149ca648c99c8ae5a8ed3b2e72024cd7a164b5ad38253b3
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/references/shape-preferences.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/references/shapre_preferences.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/draw-mermaid/references/syntax-rules.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:a4e9cb6b3fffdd39680f77810e89408a8d4e03a97fbd11766b5152d536c8dbca
 local_deployed_files:
 - .agents/skills/draw-mermaid
 - .agents/skills/draw-mermaid/SKILL.md
 - .agents/skills/draw-mermaid/assets/grayscale-classes.mmd
 - .agents/skills/draw-mermaid/references/color-palette.md
-- .agents/skills/draw-mermaid/references/color_preferences.md
+- .agents/skills/draw-mermaid/references/diagram-types.md
 - .agents/skills/draw-mermaid/references/shape-preferences.md
-- .agents/skills/draw-mermaid/references/shapre_preferences.md
 - .agents/skills/draw-mermaid/references/syntax-rules.md
+- .agents/skills/export-mermaid
+- .agents/skills/export-mermaid/SKILL.md
+- .agents/skills/export-mermaid/references/mmdc-usage.md
+- .agents/skills/export-mermaid/references/troubleshooting.md
+- .agents/skills/export-mermaid/scripts/export_diagrams.sh
 - .claude/skills/draw-mermaid
 - .claude/skills/draw-mermaid/SKILL.md
 - .claude/skills/draw-mermaid/assets/grayscale-classes.mmd
 - .claude/skills/draw-mermaid/references/color-palette.md
+- .claude/skills/draw-mermaid/references/diagram-types.md
 - .claude/skills/draw-mermaid/references/shape-preferences.md
 - .claude/skills/draw-mermaid/references/syntax-rules.md
 - .claude/skills/export-mermaid
@@ -906,16 +957,20 @@ local_deployed_files:
 - .claude/skills/export-mermaid/references/troubleshooting.md
 - .claude/skills/export-mermaid/scripts/export_diagrams.sh
 local_deployed_file_hashes:
-  .agents/skills/draw-mermaid/SKILL.md: sha256:fc7660a3c9665314802b4ab00fcc81dc0eaa67e000f5b0075bc590af513d4d1a
+  .agents/skills/draw-mermaid/SKILL.md: sha256:2477f542d55b3ea03b47d1cfb4d9d0acc219156511e30cb44e8bf8e685bc98c1
   .agents/skills/draw-mermaid/assets/grayscale-classes.mmd: sha256:03893b20fd36d1bba3165dbf34dbf8bbfd223b1ca055570ab8b91c81a589452f
   .agents/skills/draw-mermaid/references/color-palette.md: sha256:94d7128f247554a93f6781ec79ad00fb9fa8a69b2d8ff11632863bb1c3fdae80
-  .agents/skills/draw-mermaid/references/color_preferences.md: sha256:9ca3814129e47eec7149ca648c99c8ae5a8ed3b2e72024cd7a164b5ad38253b3
+  .agents/skills/draw-mermaid/references/diagram-types.md: sha256:6146db377155cd00bc919ee7e81c02ffa88832b48d0069969b7da8ee78f0554a
   .agents/skills/draw-mermaid/references/shape-preferences.md: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
-  .agents/skills/draw-mermaid/references/shapre_preferences.md: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
   .agents/skills/draw-mermaid/references/syntax-rules.md: sha256:a4e9cb6b3fffdd39680f77810e89408a8d4e03a97fbd11766b5152d536c8dbca
-  .claude/skills/draw-mermaid/SKILL.md: sha256:fc7660a3c9665314802b4ab00fcc81dc0eaa67e000f5b0075bc590af513d4d1a
+  .agents/skills/export-mermaid/SKILL.md: sha256:0a96ffd92041458277bc75f3526aa48206959d9a2e90d7737783cec2da363b52
+  .agents/skills/export-mermaid/references/mmdc-usage.md: sha256:763922c12f752b892908aa9941ff9d753dea38185c322ad37a8d6187211d9132
+  .agents/skills/export-mermaid/references/troubleshooting.md: sha256:f87a4d947a890f6c40455461ebd752bb21417b59406b6504f2c837464add8ccf
+  .agents/skills/export-mermaid/scripts/export_diagrams.sh: sha256:b7e14cf18f87138767295cb6bb149c4fb773beb876519da481d64444e6a12427
+  .claude/skills/draw-mermaid/SKILL.md: sha256:2477f542d55b3ea03b47d1cfb4d9d0acc219156511e30cb44e8bf8e685bc98c1
   .claude/skills/draw-mermaid/assets/grayscale-classes.mmd: sha256:03893b20fd36d1bba3165dbf34dbf8bbfd223b1ca055570ab8b91c81a589452f
   .claude/skills/draw-mermaid/references/color-palette.md: sha256:94d7128f247554a93f6781ec79ad00fb9fa8a69b2d8ff11632863bb1c3fdae80
+  .claude/skills/draw-mermaid/references/diagram-types.md: sha256:6146db377155cd00bc919ee7e81c02ffa88832b48d0069969b7da8ee78f0554a
   .claude/skills/draw-mermaid/references/shape-preferences.md: sha256:bffc792ca01cf32548480ce4cfbb4046836ef296b493f57c5d11c746291eb7c4
   .claude/skills/draw-mermaid/references/syntax-rules.md: sha256:a4e9cb6b3fffdd39680f77810e89408a8d4e03a97fbd11766b5152d536c8dbca
   .claude/skills/export-mermaid/SKILL.md: sha256:0a96ffd92041458277bc75f3526aa48206959d9a2e90d7737783cec2da363b52
